@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+error / Index.js
+  const manejarCambio = (event) => {
+        console.log("cambio", event.target.value)
+        props.actualizarEquipo(event.target.value)
+    }
+/// el operation
+select value={props.valor} onChange={manejarCambio}
